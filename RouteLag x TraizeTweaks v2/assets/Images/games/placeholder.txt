@@ -1,0 +1,13 @@
+Please place the following game logo images in this directory:
+
+1. fortnite.png - Fortnite logo
+2. valorant.png - Valorant logo
+3. apex.png - Apex Legends logo
+4. cod.png - Call of Duty logo
+5. cs2.png - Counter-Strike 2 logo
+6. roblox.png - Roblox logo
+7. fivem.png - FiveM logo
+8. genshin.png - Genshin Impact logo
+
+The logos should ideally be on transparent backgrounds for the best visual effect.
+You can use the logo images provided in the message or download them from official sources. 
