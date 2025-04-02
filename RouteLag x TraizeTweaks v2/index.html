@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/home2-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="assets/js/nav.js" defer></script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -15,6 +17,10 @@
         <a href="index.html" class="logo-container">
             <img src="Logo.png" alt="RouteLag Logo" class="logo">
         </a>
+    
+        <button class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </button>
     
         <div class="nav-center">
             <a href="index.html" class="nav-link active">HOME</a>
@@ -30,10 +36,6 @@
             <a href="signin.html" class="cta-button login-btn" style="border-radius: 8px; font-size: 0.9rem; padding: 10px 20px;">LOGIN</a>
             <a href="support.html" class="cta-button cta-filled" style="border-radius: 8px; font-size: 0.9rem; padding: 10px 20px;">FREE TRIAL</a>
         </div>
-
-        <button id="mobileMenuToggle" class="mobile-menu-toggle">
-            <i class="fas fa-bars"></i>
-        </button>
     </nav>
 
     <!-- Hero Section -->
@@ -49,29 +51,29 @@
                 <a href="roadmap.html" class="cta-button cta-outline" style="font-size: 1.1rem; padding: 14px 30px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.6); text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">VIEW ROADMAP</a>
             </div>
         </div>
-        <div class="hero-image">
-            <div class="comparison-container enlarged">
-                <div class="toggle-container">
+        <div class="hero-image" style="color: rgb(87, 126, 255);">
+            <div class="comparison-container enlarged" style="color: rgb(87, 126, 255);">
+                <div class="toggle-container" style="color: rgb(87, 126, 255);">
                     <div class="toggle-label">With RouteLag Off</div>
-                    <label class="toggle-switch">
+                    <label class="toggle-switch" style="color: rgb(87, 126, 255);">
                         <input type="checkbox" id="comparisonSwitch" checked>
                         <span class="toggle-slider"></span>
                     </label>
                     <div class="toggle-label active">With RouteLag On</div>
                 </div>
                 
-                <div class="comparison-stats on-stats active">
-                    <div class="stat-header">Estimated ping</div>
-                    <div class="stat-value good">12ms</div>
+                <div class="comparison-stats on-stats active" style="color: rgb(87, 126, 255);">
+                    <div class="stat-header">Estimated ping</div> 
+                    <div class="stat-value good" style="color: rgb(87, 126, 255);">12ms</div>
                     <div class="stat-header">FPS</div>
-                    <div class="stat-value good">130</div>
+                    <div class="stat-value good" style="color: rgb(87, 126, 255);">180</div>
                 </div>
                 
                 <div class="comparison-stats off-stats">
                     <div class="stat-header">Estimated ping</div>
-                    <div class="stat-value bad">87ms</div>
+                    <div class="stat-value bad">130ms</div>
                     <div class="stat-header">FPS</div>
-                    <div class="stat-value bad">68</div>
+                    <div class="stat-value bad">56</div>
                 </div>
             </div>
         </div>
@@ -115,19 +117,19 @@
     <section class="stats-section">
         <div class="stats-container">
             <div class="stat-block">
-                <h2 class="stat-number">2000<span class="plus">+</span></h2>
+                <h2 class="stat-number">IN DEVELOPMENT<span class="plus">+</span></h2>
                 <p class="stat-label"><span class="highlight"></span> WORLDWIDE SERVERS</p>
             </div>
             <div class="stat-block">
-                <h2 class="stat-number">2000<span class="plus">+</span></h2>
+                <h2 class="stat-number">IN DEVELOPMENT<span class="plus">+</span></h2>
                 <p class="stat-label"><span class="highlight"></span> SUPPORTED GAMES</p>
             </div>
             <div class="stat-block">
-                <h2 class="stat-number">99<span class="percent">%</span></h2>
+                <h2 class="stat-number">IN DEVELOPMENT<span class="percent">%</span></h2>
                 <p class="stat-label"><span class="highlight"></span> REDUCE PING</p>
             </div>
             <div class="stat-block">
-                <h2 class="stat-number">100<span class="percent">%</span></h2>
+                <h2 class="stat-number">IN DEVELOPMENT<span class="percent">%</span></h2>
                 <p class="stat-label"><span class="highlight"></span> REDUCED PACKET LOSS</p>
             </div>
         </div>
@@ -237,7 +239,7 @@
                 <input type="checkbox" id="pricingToggle">
                 <span class="toggle-slider"></span>
             </label>
-            <span class="toggle-label" id="yearlyLabel">Yearly (Save 50%)</span>
+            <span class="toggle-label" id="yearlyLabel">Yearly (Save 55%)</span>
         </div>
 
         <div class="pricing-container">
@@ -249,7 +251,7 @@
                 <div class="pricing-features">
                     <div class="feature-item">
                         <i class="fas fa-check"></i>
-                        <span>40 Optimizations</span>
+                        <span>20 Optimizations</span>
                     </div>
                     <div class="feature-item">
                         <i class="fas fa-check"></i>
@@ -257,14 +259,26 @@
                     </div>
                     <div class="feature-item">
                         <i class="fas fa-check"></i>
-                        <span>Debloat & PC Cleanup Feature</span>
+                        <span>Debloat & PC Cleanup</span>
                     </div>
                     <div class="feature-item">
                         <i class="fas fa-check"></i>
                         <span>Disable Useless Features</span>
                     </div>
+                    <div class="feature-item">
+                        <i class="fas fa-times"></i>
+                        <span>No Routing Optimizations</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-times"></i>
+                        <span>No Network Improvements</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-times"></i>
+                        <span>No Gaming Enhancements</span>
+                    </div>
                 </div>
-                <a href="support.html" class="pricing-cta" style="border-radius: 8px; font-size: 1.05rem; font-weight: 600; letter-spacing: 1px; padding: 12px 20px;">Download</a>
+                <a href="support.html" class="pricing-cta" style="border-radius: 8px; font-size: 1.05rem; font-weight: 600; letter-spacing: 1px; padding: 12px 20px;">Download Free</a>
             </div>
 
             <div class="pricing-card recommended">
@@ -272,13 +286,13 @@
                 <div class="pricing-header">
                     <h3>RouteLag Basic</h3>
                     <p class="price monthly active">$4.99<span>/month</span></p>
-                    <p class="price yearly">$24.99<span>/year</span></p>
+                    <p class="price yearly">$26.99<span>/year</span></p>
                     <p class="price-subtitle">5 day free trial</p>
                 </div>
                 <div class="pricing-features">
                     <div class="feature-item">
                         <i class="fas fa-check"></i>
-                        <span>200+ Optimizations</span>
+                        <span>100+ Optimizations</span>
                     </div>
                     <div class="feature-item">
                         <i class="fas fa-check"></i>
@@ -301,6 +315,7 @@
                         <span>Priority Support</span>
                     </div>
                 </div>
+                <p class="pricing-description">Ideal for competitive gamers who want a noticeable FPS boost and reduced delay.</p>
                 <a href="support.html" class="pricing-cta" style="border-radius: 8px; font-size: 1.05rem; font-weight: 600; letter-spacing: 1px; padding: 12px 20px;">Get Basic Plan</a>
             </div>
 
@@ -308,7 +323,7 @@
                 <div class="pricing-header">
                     <h3>RouteLag Plus</h3>
                     <p class="price monthly active">$6.99<span>/month</span></p>
-                    <p class="price yearly">$34.99<span>/year</span></p>
+                    <p class="price yearly">$36.99<span>/year</span></p>
                 </div>
                 <div class="pricing-features">
                     <div class="feature-item">
@@ -344,6 +359,7 @@
                         <span>Priority Support</span>
                     </div>
                 </div>
+                <p class="pricing-description">Designed for professional gamers and streamers who demand the best performance and lowest latency.</p>
                 <a href="support.html" class="pricing-cta" style="border-radius: 8px; font-size: 1.05rem; font-weight: 600; letter-spacing: 1px; padding: 12px 20px;">Get Plus Plan</a>
             </div>
         </div>
@@ -507,7 +523,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="assets/images/Logo.png" alt="RouteLag Logo" class="logo">
+                <img src="Logo.png" alt="RouteLag Logo" class="logo">
                 <span>RouteLag</span>
             </div>
             <div class="footer-links">

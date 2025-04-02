@@ -185,46 +185,63 @@ document.addEventListener('DOMContentLoaded', () => {
     // Animated comparison stats with smooth transitions
     function animateStats() {
         const pingValues = {
-            on: [8, 10, 12, 9, 11],
-            off: [75, 80, 87, 92, 84]
+            on: [8, 9, 7, 10, 8, 9, 7, 8],  // Tighter range for better ping
+            off: [75, 78, 82, 79, 81, 77, 80, 78]  // Tighter range for worse ping
         };
         
         const fpsValues = {
-            on: [125, 130, 128, 132, 135],
-            off: [62, 68, 65, 58, 72]
+            on: [125, 128, 130, 127, 129, 126, 128, 127],  // Tighter range for better FPS
+            off: [45, 48, 42, 46, 44, 47, 43, 45]  // Much lower FPS when off
         };
         
-        const goodPing = document.querySelector('.on-stats .stat-value:nth-of-type(1)');
-        const goodFps = document.querySelector('.on-stats .stat-value:nth-of-type(2)');
-        const badPing = document.querySelector('.off-stats .stat-value:nth-of-type(1)');
-        const badFps = document.querySelector('.off-stats .stat-value:nth-of-type(2)');
+        // Update selectors to match actual HTML structure
+        const goodPing = document.querySelector('.on-stats .stat-value:nth-child(2)');
+        const goodFps = document.querySelector('.on-stats .stat-value:nth-child(4)');
+        const badPing = document.querySelector('.off-stats .stat-value:nth-child(2)');
+        const badFps = document.querySelector('.off-stats .stat-value:nth-child(4)');
         
         let index = 0;
         
-        setInterval(() => {
-            index = (index + 1) % pingValues.on.length;
+        // Function to update stats based on toggle state
+        function updateStats() {
+            const isOn = comparisonSwitch.checked;
+            const currentPing = isOn ? pingValues.on[index] : pingValues.off[index];
+            const currentFps = isOn ? fpsValues.on[index] : fpsValues.off[index];
             
-            // Add a smooth transition effect
+            // Update with animation
             function updateWithAnimation(element, value, suffix = '') {
                 if (!element) return;
                 
-                // First make it slightly transparent
                 element.style.opacity = '0.5';
                 element.style.transform = 'translateY(5px)';
                 
-                // Then after a short delay, update the value and restore opacity
                 setTimeout(() => {
                     element.textContent = value + suffix;
                     element.style.opacity = '1';
                     element.style.transform = 'translateY(0)';
-                }, 200);
+                }, 200); // Slower animation
             }
             
-            updateWithAnimation(goodPing, pingValues.on[index], 'ms');
-            updateWithAnimation(goodFps, fpsValues.on[index]);
-            updateWithAnimation(badPing, pingValues.off[index], 'ms');
-            updateWithAnimation(badFps, fpsValues.off[index]);
-        }, 3000);
+            // Update all stats
+            updateWithAnimation(goodPing, currentPing, 'ms');
+            updateWithAnimation(goodFps, currentFps);
+            updateWithAnimation(badPing, currentPing, 'ms');
+            updateWithAnimation(badFps, currentFps);
+        }
+        
+        // Initial update
+        updateStats();
+        
+        // Update every 2 seconds for slower changes
+        setInterval(() => {
+            index = (index + 1) % pingValues.on.length;
+            updateStats();
+        }, 2000);
+        
+        // Update when toggle changes
+        if (comparisonSwitch) {
+            comparisonSwitch.addEventListener('change', updateStats);
+        }
     }
     
     animateStats();

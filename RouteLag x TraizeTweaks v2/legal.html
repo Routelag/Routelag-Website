@@ -3,21 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RouteLag - Coming Soon</title>
+    <title>Legal Information - RouteLag</title>
     <link rel="icon" href="Logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/home2-style.css">
     <script src="assets/js/nav.js" defer></script>
     <style>
-        .date-published {
-            font-size: 2.5rem;
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content {
+            flex: 1;
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .legal-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .legal-section h2 {
+            color: #0046ff;
+            margin-bottom: 1.5rem;
             font-weight: 600;
-            color: rgb(87, 126, 255);
-            margin: 20px 0;
-            text-shadow: 0 0 10px rgba(87, 126, 255, 0.3);
-            letter-spacing: 2px;
-            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .legal-section h3 {
+            color: #ffffff;
+            margin: 2rem 0 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .legal-section p {
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .legal-section ul {
+            color: #e0e0e0;
+            margin-bottom: 1rem;
+            padding-left: 20px;
+        }
+        .legal-section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        section {
+            margin-bottom: 3rem;
         }
     </style>
 </head>
@@ -36,7 +81,7 @@
             <a href="index.html" class="nav-link">HOME</a>
             <a href="index.html#games" class="nav-link">GAMES</a>
             <a href="index.html#pricing" class="nav-link">PRICING</a>
-            <a href="comingsoon.html" class="nav-link active">DOWNLOAD</a>
+            <a href="comingsoon.html" class="nav-link">DOWNLOAD</a>
             <a href="about.html" class="nav-link">ABOUT</a>
             <a href="index.html#faq" class="nav-link">FAQ</a>
             <a href="support.html" class="nav-link">SUPPORT</a>
@@ -46,42 +91,28 @@
             <a href="signin.html" class="cta-button login-btn" style="border-radius: 8px; font-size: 0.9rem; padding: 10px 20px;">LOGIN</a>
             <a href="support.html" class="cta-button cta-filled" style="border-radius: 8px; font-size: 0.9rem; padding: 10px 20px;">FREE TRIAL</a>
         </div>
-
-    
     </nav>
 
-    <div class="eclipse">
-        <div class="content">
-            <h1 class="coming-soon">Coming Soon</h1>
-            <h2 class="date-published">January 1st, 2026</h2>
-            <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.8); max-width: 600px; margin: 0 auto 30px; line-height: 1.6;">
-                We're working hard to develop RouteLag and make it the ultimate gaming optimization tool. 
-                Your support helps us improve our services and accelerate development.
-            </p>
-            <div class="countdown">
-                <div class="countdown-item">
-                    <span class="countdown-value" id="days">000</span>
-                    <span class="countdown-label">Days</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-value" id="hours">00</span>
-                    <span class="countdown-label">Hours</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-value" id="minutes">00</span>
-                    <span class="countdown-label">Minutes</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-value" id="seconds">00</span>
-                    <span class="countdown-label">Seconds</span>
-                </div>
-            </div>
-            <div class="buttons">
-                <a href="support.html" class="cta-button cta-filled glow" style="font-size: 1.1rem; padding: 14px 30px; box-shadow: 0 0 20px rgba(87, 126, 255, 0.6); border-radius: 8px; border: 2px solid rgba(87, 126, 255, 0.8); text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">SUPPORT OUR DEVELOPMENT</a>
-                <a href="roadmap.html" class="cta-button cta-outline" style="font-size: 1.1rem; padding: 14px 30px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.6); text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">VIEW ROADMAP</a>
-            </div>
+    <main class="main-content">
+        <div class="legal-section">
+            <h2>Legal Information</h2>
+
+            <section id="terms">
+                <h3>Terms of Service</h3>
+                <p>By using RouteLag, you agree to our terms and conditions. We provide optimization tools for gaming and system performance. Misuse, unauthorized sharing, or attempting to modify our services is prohibited. We reserve the right to update these terms at any time. Continued use of our services after changes means you accept the new terms.</p>
+            </section>
+
+            <section id="privacy">
+                <h3>Privacy Policy</h3>
+                <p>We collect basic user information necessary for account creation and service improvement. Your data is never sold or shared with third parties. We use secure encryption to protect user data. By using RouteLag, you consent to our data collection practices.</p>
+            </section>
+
+            <section id="refund">
+                <h3>Refund Policy</h3>
+                <p>Refunds are available within 5 days of purchase if you are unsatisfied. To request a refund, contact our support team with your order details. After 5 days, refunds are not available due to the nature of digital services.</p>
+            </section>
         </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -138,27 +169,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function updateCountdown() {
-            const launchDate = new Date('January 1, 2026 00:00:00').getTime();
-            const now = new Date().getTime();
-            const distance = launchDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById('days').textContent = days.toString().padStart(3, '0');
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        }
-
-        // Update countdown every second
-        setInterval(updateCountdown, 1000);
-        updateCountdown(); // Initial call
-    </script>
 </body>
 </html> 
