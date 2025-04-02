@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RouteLag</title>
+    <link rel="icon" href="Logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/home2-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="assets/js/nav.js" defer></script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="Logo.png" alt="RouteLag Logo" class="logo">
+        </a>
+    
+        <button class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    
+        <div class="nav-center">
+            <a href="index.html" class="nav-link active">HOME</a>
+            <a href="#games" class="nav-link">GAMES</a>
+            <a href="#pricing" class="nav-link">PRICING</a>
+            <a href="comingsoon.html" class="nav-link">DOWNLOAD</a>
+            <a href="about.html" class="nav-link">ABOUT</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="support.html" class="nav-link">SUPPORT</a>
+        </div>
+    
+        <div class="auth-buttons">
+            <a href="signin.html" class="cta-button login-btn" style="border-radius: 8px; font-size: 0.9rem; padding: 10px 20px;">LOGIN</a>
+            <a href="support.html" class="cta-button cta-filled" style="border-radius: 8px; font-size: 0.9rem; padding: 10px 20px;">FREE TRIAL</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Lower Your Ping and Boost FPS with RouteLag</h1>
+            <p class="hero-subtitle">
+                Experience low-latency gameplay powered by AI and unlock your full potential on any device.
+                Reduce ping, increase FPS, and fix lag, it has never been so simple. Try RouteLag for free now!
+            </p>
+            <div class="hero-cta">
+                <a href="support.html" class="cta-button cta-filled glow" style="font-size: 1.1rem; padding: 14px 30px; box-shadow: 0 0 20px rgba(87, 126, 255, 0.6); border-radius: 8px; border: 2px solid rgba(87, 126, 255, 0.8); text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">SUPPORT DEVELOPMENT</a>
+                <a href="roadmap.html" class="cta-button cta-outline" style="font-size: 1.1rem; padding: 14px 30px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.6); text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">VIEW ROADMAP</a>
+            </div>
+        </div>
+        <div class="hero-image" style="color: rgb(87, 126, 255);">
+            <div class="comparison-container enlarged" style="color: rgb(87, 126, 255);">
+                <div class="toggle-container" style="color: rgb(87, 126, 255);">
+                    <div class="toggle-label">With RouteLag Off</div>
+                    <label class="toggle-switch" style="color: rgb(87, 126, 255);">
+                        <input type="checkbox" id="comparisonSwitch" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <div class="toggle-label active">With RouteLag On</div>
+                </div>
+                
+                <div class="comparison-stats on-stats active" style="color: rgb(87, 126, 255);">
+                    <div class="stat-header">Estimated ping</div> 
+                    <div class="stat-value good" style="color: rgb(87, 126, 255);">12ms</div>
+                    <div class="stat-header">FPS</div>
+                    <div class="stat-value good" style="color: rgb(87, 126, 255);">180</div>
+                </div>
+                
+                <div class="comparison-stats off-stats">
+                    <div class="stat-header">Estimated ping</div>
+                    <div class="stat-value bad">130ms</div>
+                    <div class="stat-header">FPS</div>
+                    <div class="stat-value bad">56</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games-section">
+        <div class="section-header">
+            <h2>Trusted by Many Gamers Worldwide</h2>
+        </div>
+        
+        <div class="games-grid">
+            <div class="game-card">
+                <h3>Fortnite</h3>
+            </div>
+            <div class="game-card">
+                <h3>Valorant</h3>
+            </div>
+            <div class="game-card">
+                <h3>Apex Legends</h3>
+            </div>
+            <div class="game-card">
+                <h3>Call of Duty</h3>
+            </div>
+            <div class="game-card">
+                <h3>Counter-Strike 2</h3>
+            </div>
+            <div class="game-card">
+                <h3>Roblox</h3>
+            </div>
+            <div class="game-card">
+                <h3>FiveM</h3>
+            </div>
+            <div class="game-card">
+                <h3>Genshin Impact</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-block">
+                <h2 class="stat-number">IN DEVELOPMENT<span class="plus">+</span></h2>
+                <p class="stat-label"><span class="highlight"></span> WORLDWIDE SERVERS</p>
+            </div>
+            <div class="stat-block">
+                <h2 class="stat-number">IN DEVELOPMENT<span class="plus">+</span></h2>
+                <p class="stat-label"><span class="highlight"></span> SUPPORTED GAMES</p>
+            </div>
+            <div class="stat-block">
+                <h2 class="stat-number">IN DEVELOPMENT<span class="percent">%</span></h2>
+                <p class="stat-label"><span class="highlight"></span> REDUCE PING</p>
+            </div>
+            <div class="stat-block">
+                <h2 class="stat-number">IN DEVELOPMENT<span class="percent">%</span></h2>
+                <p class="stat-label"><span class="highlight"></span> REDUCED PACKET LOSS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-header">
+            <h2 class="section-subtitle">So, What Are You Getting?</h2>
+            <h1 class="section-title">Get The Best Gaming Performance You've Always Wanted</h1>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-content">
+                    <h3 class="feature-subtitle">Drastically</h3>
+                    <h2 class="feature-title increase">Increase FPS</h2>
+                    <p class="feature-description">Boost Your PC's Performance</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-content">
+                    <h3 class="feature-subtitle">Drastically</h3>
+                    <h2 class="feature-title reduce">Reduce Latency</h2>
+                    <p class="feature-description">Make Your PC More Responsive</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-content">
+                    <h3 class="feature-subtitle">Fix Packet Loss And</h3>
+                    <h2 class="feature-title decrease">Decrease Ping</h2>
+                    <p class="feature-description">Optimize Your Internet</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-content">
+                    <h3 class="feature-subtitle">Stop Freezes & Stutters</h3>
+                    <h2 class="feature-title fix">Fix FPS Drops</h2>
+                    <p class="feature-description">Experience Smoothness</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-content">
+                    <h3 class="feature-subtitle">Experience The Most</h3>
+                    <h2 class="feature-title responsive">Responsive</h2>
+                    <p class="feature-description">Smoothest Gaming Experience</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-content">
+                    <h3 class="feature-subtitle">Unlock Your PC's</h3>
+                    <h2 class="feature-title potential">Full Potential</h2>
+                    <p class="feature-description">In Less Than 10 Minutes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="section-header">
+            <h2>How RouteLag Works</h2>
+        </div>
+
+        <div class="steps-timeline">
+            <div class="timeline-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Simple Installation</h3>
+                    <p>Our user-friendly application makes the setup a breeze. Get started with ease and no technical hassle.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Effortless Optimization</h3>
+                    <p>In only around 10 minutes, experience the power of our tool as it optimizes your entire PC effortlessly. There is also a guide and tutorial to help you apply all the settings if needed.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Enjoy The Performance</h3>
+                    <p>After using the application, simply restart your PC and play your favorite games, enjoy the performance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="section-header">
+            <h2>Pricing</h2>
+            <p>Choose the right plan to meet your gaming needs and start optimizing today.</p>
+        </div>
+
+        <div class="pricing-toggle-container">
+            <span class="toggle-label active" id="monthlyLabel">Monthly</span>
+            <label class="toggle-switch pricing-switch">
+                <input type="checkbox" id="pricingToggle">
+                <span class="toggle-slider"></span>
+            </label>
+            <span class="toggle-label" id="yearlyLabel">Yearly (Save 55%)</span>
+        </div>
+
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Free</h3>
+                    <p class="price">Free Forever</p>
+                </div>
+                <div class="pricing-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>20 Optimizations</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Estimated 20% FPS Boost</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Debloat & PC Cleanup</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Disable Useless Features</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-times"></i>
+                        <span>No Routing Optimizations</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-times"></i>
+                        <span>No Network Improvements</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-times"></i>
+                        <span>No Gaming Enhancements</span>
+                    </div>
+                </div>
+                <a href="support.html" class="pricing-cta" style="border-radius: 8px; font-size: 1.05rem; font-weight: 600; letter-spacing: 1px; padding: 12px 20px;">Download Free</a>
+            </div>
+
+            <div class="pricing-card recommended">
+                <div class="recommendation-badge">MOST POPULAR</div>
+                <div class="pricing-header">
+                    <h3>RouteLag Basic</h3>
+                    <p class="price monthly active">$4.99<span>/month</span></p>
+                    <p class="price yearly">$26.99<span>/year</span></p>
+                    <p class="price-subtitle">5 day free trial</p>
+                </div>
+                <div class="pricing-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>100+ Optimizations</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Estimated 40-50% FPS Boost</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Advanced Configurations</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Low Latency & Delay</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Game Settings Configuration</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Priority Support</span>
+                    </div>
+                </div>
+                <p class="pricing-description">Ideal for competitive gamers who want a noticeable FPS boost and reduced delay.</p>
+                <a href="support.html" class="pricing-cta" style="border-radius: 8px; font-size: 1.05rem; font-weight: 600; letter-spacing: 1px; padding: 12px 20px;">Get Basic Plan</a>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>RouteLag Plus</h3>
+                    <p class="price monthly active">$6.99<span>/month</span></p>
+                    <p class="price yearly">$36.99<span>/year</span></p>
+                </div>
+                <div class="pricing-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>200+ Optimizations</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Estimated 60%+ FPS Boost</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Custom Crosshair Feature</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Unlock Hidden BIOS Settings</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Stabilize & Remove FPS Drops</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Stabilize Ping & Latency</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Advanced Game Configurations</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Priority Support</span>
+                    </div>
+                </div>
+                <p class="pricing-description">Designed for professional gamers and streamers who demand the best performance and lowest latency.</p>
+                <a href="support.html" class="pricing-cta" style="border-radius: 8px; font-size: 1.05rem; font-weight: 600; letter-spacing: 1px; padding: 12px 20px;">Get Plus Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+ 
+        
+        
+
+    <!-- Testimonials Section -->
+    <!--<section id="testimonials" class="testimonials-section">
+        <div class="section-header">
+            <h2>What Gamers Say About Us</h2>
+            <p>Join thousands of satisfied players who've improved their gaming experience</p>
+        </div>
+        
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="assets/images/avatars/gamer1.jpg" alt="Gamer Avatar" onerror="this.src='assets/images/avatars/default-avatar.jpg'">
+                    </div>
+                    <div class="testimonial-info">
+                        <h3>Alex "DarkSlayer" Johnson</h3>
+                        <p class="testimonial-game">Valorant Player</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"RouteLag is a game-changer! My ping went from 90ms to 35ms, and I've never played better. The FPS optimization also gave me a consistent 240+ fps. Worth every penny!"</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="assets/images/avatars/gamer2.jpg" alt="Gamer Avatar" onerror="this.src='assets/images/avatars/default-avatar.jpg'">
+                    </div>
+                    <div class="testimonial-info">
+                        <h3>Sarah "NightSniper" Williams</h3>
+                        <p class="testimonial-game">CS2 Pro Player</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"As a professional player, every millisecond counts. RouteLag has eliminated my micro-stutters and reduced my ping by 40%. I now use it for all tournament preparation and competitive matches."</p>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="assets/images/avatars/gamer3.jpg" alt="Gamer Avatar" onerror="this.src='assets/images/avatars/default-avatar.jpg'">
+                    </div>
+                    <div class="testimonial-info">
+                        <h3>Mike "BattleMage" Rodriguez</h3>
+                        <p class="testimonial-game">Fortnite Streamer</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"After installing RouteLag, my stream quality improved dramatically. No more lag spikes during builds and battles. My viewers immediately noticed the difference, and I've gained 30% more followers since using it!"</p>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about RouteLag</p>
+        </div>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What exactly does RouteLag do?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>RouteLag optimizes your internet connection for gaming by routing your traffic through our global network of servers, reducing ping, packet loss, and jitter. Additionally, our software optimizes your PC settings for maximum performance, boosting FPS and reducing stuttering in games.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is RouteLag safe to use?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! RouteLag is 100% safe and does not modify any system files. It only changes network settings and makes temporary optimizations while the software is running. We do not collect any personal data beyond what's necessary for the service to function.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Will RouteLag work with any game?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! RouteLag works with all online games. Our optimization techniques are game-agnostic and focus on improving your network connection and system performance, which benefits any game you play.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How much ping reduction can I expect?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Results vary depending on your location, internet provider, and the game servers you connect to. Most users see a 20-70% reduction in ping, with some experiencing even greater improvements. Our optimization techniques are particularly effective if you're experiencing routing issues with your ISP.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do I need a powerful PC for RouteLag to work?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Not at all! RouteLag is designed to work on any PC, from high-end gaming rigs to older systems. In fact, users with older or less powerful PCs often see the most dramatic improvements as our optimization techniques help maximize the available resources.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I try RouteLag before purchasing?</h3>
+                    <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer a free trial so you can experience the benefits of RouteLag before committing to a subscription. No credit card required for the trial - simply download, install, and see the difference for yourself.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <h2>Ready to Transform Your Gaming Experience?</h2>
+        <p>We're currently developing RouteLag to make it even better for you!</p>
+        <p style="margin-bottom: 30px;">Support our work and be among the first to try the optimized gaming experience.</p>
+        <a href="support.html" class="cta-button cta-filled glow" style="font-size: 1.1rem; padding: 14px 30px; box-shadow: 0 0 20px rgba(87, 126, 255, 0.6); border-radius: 8px; border: 2px solid rgba(87, 126, 255, 0.8); text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">SUPPORT OUR DEVELOPMENT</a>
+        <p class="cta-note">Coming soon • Join our community today</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Logo.png" alt="RouteLag Logo" class="logo">
+                <span>RouteLag</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="comingsoon.html">Download</a></li>
+                        <li><a href="#comparison">Compare</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="comingsoon.html">Partners</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="comingsoon.html">Blog</a></li>
+                        <li><a href="comingsoon.html">Community</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="comingsoon.html">Tutorials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://discord.gg/X8VBmhYnKa"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 RouteLag. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/home2-script.js"></script>
+    
+    <script>
+        // FAQ Accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
