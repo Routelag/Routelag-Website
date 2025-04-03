@@ -2,10 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile menu toggle
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const navCenter = document.querySelector('.nav-center');
+    const body = document.body;
 
     if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', () => {
+        mobileMenuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
             navCenter.classList.toggle('active');
+            body.style.overflow = navCenter.classList.contains('active') ? 'hidden' : '';
         });
     }
 
@@ -15,12 +18,29 @@ document.addEventListener('DOMContentLoaded', () => {
             !navCenter.contains(event.target) && 
             event.target !== mobileMenuToggle) {
             navCenter.classList.remove('active');
+            body.style.overflow = '';
         }
     });
 
-    // Fix navigation links - make sure they work correctly
-    const navLinks = document.querySelectorAll('a:not([onclick])');
+    // Close mobile menu when clicking a link
+    const navLinks = document.querySelectorAll('.nav-center .nav-link');
     navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navCenter.classList.remove('active');
+            body.style.overflow = '';
+        });
+    });
+
+    // Prevent default touch behavior on mobile menu
+    navCenter.addEventListener('touchmove', (e) => {
+        if (navCenter.classList.contains('active')) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+
+    // Fix navigation links - make sure they work correctly
+    const allLinks = document.querySelectorAll('a:not([onclick])');
+    allLinks.forEach(link => {
         if (link.getAttribute('href') && 
             !link.getAttribute('href').startsWith('#') && 
             !link.getAttribute('href').startsWith('javascript')) {
